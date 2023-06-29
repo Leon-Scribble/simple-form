@@ -5,6 +5,7 @@ use c10d\crafthcaptcha\CraftHcaptcha;
 use Craft;
 use craft\mail\Message;
 use craft\web\Controller;
+use scribblewerbeagentur\craftsimpleform\SimpleForm;
 use yii\base\InvalidConfigException;
 
 class FormController extends Controller
@@ -19,12 +20,12 @@ class FormController extends Controller
         $data = Craft::$app->getRequest()->getBodyParams();
         if (!isset($data)) return;
 
+        $settings = SimpleForm::getInstance()->getSettings();
+
+        $recipient = $settings->receiver; // *change this in Production * Haupt Form E-Mail //
 
 
-        $recipient = "0xc0ffee@scribble-workspace.de"; // *change this in Production * Haupt Form E-Mail //
-
-
-        $subject = "[SimpleForm] E-Mail Test";
+        $subject = $settings->subject;
         /* HoneyPot */
         if(!empty($data['real-email']) | !empty($data['real-telephone'])) {
             $response['message'] = "Honeypot Triggered!";
