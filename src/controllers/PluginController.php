@@ -4,7 +4,7 @@ use craft\web\Controller;
 
 namespace scribblewerbeagentur\craftsimpleform\controllers;
 
-class PluginController
+class PluginController extends Controller
 {
     public function actionIndex()
     {
