@@ -2,9 +2,22 @@
 {# @var settings \scribblewerbeagentur\craftsimpleform\models\Settings #}
 
 {% import '_includes/forms.twig' as forms %}
-<div>
 
-</div>
+{% import '_includes/forms.twig' as forms %}
+    {% import '_includes/forms.twig' as forms %}
+    {{ forms.textField({
+        first: true,
+        label: 'Receiver',
+        name: 'receiver',
+        value: settings.receiver
+    }) }}
+
+    {{ forms.textField({
+        label: 'Subject',
+        name: 'subject',
+        value: settings.subject
+    }) }}
+
 
 
 {# ... #}

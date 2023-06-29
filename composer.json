@@ -5,7 +5,8 @@
     "license": "MIT",
     "require": {
         "php": ">=8.0.2",
-        "craftcms/cms": "^4.4.0"
+        "craftcms/cms": "^4.4.0",
+        "c10d/craft-hcaptcha": "2.0.2"
     },
     "autoload": {
         "psr-4": {

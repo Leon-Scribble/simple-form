@@ -10,12 +10,12 @@ use craft\base\Model;
  */
 class Settings extends Model
 {
-    public $foo = 'defaultFooValue';
-    public $bar = 'defaultBarValue';
+    public $receiver = 'example@example.com';
+    public $subject = '[SimpleForm] Default';
     public function defineRules(): array
     {
         return [
-            [['foo', 'bar'], 'required'],
+            [['receiver', 'subject']],
         ];
     }
 
