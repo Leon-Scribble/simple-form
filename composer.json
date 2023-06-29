@@ -1,5 +1,5 @@
 {
-    "name": "leon/craft-simple-form",
+    "name": "scribblewerbeagentur/craft-simple-form",
     "description": "Simple Contact Form",
     "type": "craft-plugin",
     "license": "MIT",
@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "leon\\craftsimpleform\\": "src/"
+            "scribblewerbeagentur\\craftsimpleform\\": "src/"
         }
     },
     "extra": {
@@ -17,7 +17,7 @@
         "name": "SimpleForm",
         "developer": "Leon",
         "documentationUrl": "",
-        "class": "leon\\craftsimpleform\\SimpleForm"
+        "class": "scribblewerbeagentur\\craftsimpleform\\SimpleForm"
     },
     "scripts": {
     },

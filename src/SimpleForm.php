@@ -1,11 +1,11 @@
 <?php
 
-namespace leon\craftsimpleform;
+namespace scribblewerbeagentur\craftsimpleform;
 
 use Craft;
 use craft\base\Model;
 use craft\base\Plugin;
-use leon\craftsimpleform\models\Settings;
+use scribblewerbeagentur\craftsimpleform\models\Settings;
 
 /**
  * SimpleForm plugin

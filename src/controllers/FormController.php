@@ -1,6 +1,6 @@
 <?php
 
-namespace leon\craftsimpleform\controllers;
+namespace scribblewerbeagentur\craftsimpleform\controllers;
 use c10d\crafthcaptcha\CraftHcaptcha;
 use Craft;
 use craft\mail\Message;

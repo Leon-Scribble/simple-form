@@ -1,6 +1,6 @@
 <?php
 
-namespace leon\craftsimpleform\models;
+namespace scribblewerbeagentur\craftsimpleform\models;
 
 use Craft;
 use craft\base\Model;
