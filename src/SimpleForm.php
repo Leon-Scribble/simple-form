@@ -6,15 +6,7 @@ use Craft;
 use craft\base\Model;
 use craft\base\Plugin;
 use scribblewerbeagentur\craftsimpleform\models\Settings;
-Event::on(
-    UrlHelper::class,
-    UrlHelper::EVENT_REGISTER_CP_URL_RULES,
-    function(RegisterCpRoutesEvent $event) {
-        $event->rules['simple-form/custom-action'] = 'simple-form/plugin-controller/index';
-        // Replace 'myplugin/custom-action' with your desired subroute URL segment,
-        // and 'pluginname/my-custom-controller/action' with the controller and action path
-    }
-);
+
 /**
  * SimpleForm plugin
  *
