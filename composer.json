@@ -1,0 +1,34 @@
+{
+    "name": "leon/craft-simple-form",
+    "description": "Simple Contact Form",
+    "type": "craft-plugin",
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "leon\\craftsimpleform\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "simple-form",
+        "name": "SimpleForm",
+        "developer": "Leon",
+        "documentationUrl": "",
+        "class": "leon\\craftsimpleform\\SimpleForm"
+    },
+    "scripts": {
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
