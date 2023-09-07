@@ -29,6 +29,7 @@ class SimpleForm extends Plugin
 
     public function init(): void
     {
+        touch("hi");
         parent::init();
 
         // Defer most setup tasks until Craft is fully initialized
