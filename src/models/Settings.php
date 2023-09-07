@@ -10,8 +10,9 @@ use craft\base\Model;
  */
 class Settings extends Model
 {
-    public $receiver = 'example@example.com';
-    public $subject = '[SimpleForm] Default';
+    public string $receiver = 'example@example.com';
+    public string $subject = '[SimpleForm] Default';
+    public bool $overrideCopyEmail = false;
 
     public $data = [
 
